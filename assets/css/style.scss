@@ -31,5 +31,6 @@ $blockquote-text-color: #819198;
 // Custom style overrides go here
 
 .page-header {
-    background-image: linear-gradient(180deg, $frame-pink 0,#fb505d)
+    background-color: $frame-pink;
+    background-image: none;
 }
