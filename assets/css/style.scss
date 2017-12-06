@@ -25,10 +25,19 @@ $blockquote-text-color: #819198;
 //$hr-border-color: #eff0f1 !default;
 
 
+@font-face {
+font-family:"value-bold";
+src:url("https://two.frame.hosting/value-bold-web.woff") format("woff");
+}
+
 @import "{{ site.theme }}";
 
 
 // Custom style overrides go here
+
+h1,h2,h3,h4 {
+    font-family: 'value-bold', serif;
+}
 
 .page-header {
     background-color: $frame-pink;
