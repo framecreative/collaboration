@@ -30,13 +30,33 @@ font-family:"value-bold";
 src:url("https://two.frame.hosting/value-bold-web.woff") format("woff");
 }
 
+@font-face {
+font-family:"ano-bold-regular";
+src:url("https://two.frame.hosting/ano-bold-regular.woff") format("woff");
+}
+
 @import "{{ site.theme }}";
 
 
 // Custom style overrides go here
 
-h1,h2,h3,h4 {
+h1,
+.project-name {
     font-family: 'value-bold', serif;
+}
+
+h2,h3,h4 {
+    font-family: 'ano-bold-regular', sans-serif;
+}
+
+.btn {
+    background-color: transparentize( $frame-red, 0.2 );
+    color: transparentize( #fff, 0.2);
+
+    &:hover {
+        background-color: transparentize( #fff, 0.2);
+        color: transparentize( $frame-red, 0.2 );
+    }
 }
 
 .page-header {
